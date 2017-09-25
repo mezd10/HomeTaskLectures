@@ -1,13 +1,4 @@
-import java.util.Arrays;
-
 public class MaxSubArray {
-
-    int[] arrayAll;
-
-    public MaxSubArray(int[] arrayAll) {
-
-        this.arrayAll = max(arrayAll);
-    }
 
     public static int[] max(int[] arrayAll) {
 
@@ -41,14 +32,5 @@ public class MaxSubArray {
         for (int element : arrayAll) {
             System.out.print(element + " ");
         }
-    }
-
-    @Override
-    public String toString() {
-        String count = "";
-        for (int i = 0; i < arrayAll.length; i++) {
-            count += arrayAll[i] + " ";
-        }
-        return count;
     }
 }
